@@ -30,6 +30,17 @@ margin: 0;
 padding: 0;
 }
 
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+border: 0;
+clip: rect(0 0 0 0);
+}
+
 p,
 h1,
 h2,
@@ -577,7 +588,7 @@ margin-bottom: 16px;
 .content-email {
 width: 264px;
 height: 40px;
-padding: 8px 0 8px 16px;
+padding: 8px 0 8px 55px;
 margin-left: 0;
 border-radius: 4px;
 border: 1px solid #FFFFFF;
@@ -615,13 +626,21 @@ font-family: inherit;
 transition: background-color 250ms;
 }
 
+.email-sub{
+position: absolute;
+color: #E7E9FC;
+}
+
+
+.telegram {
+width: 24px;
+height: 20px;
+fill: var(--color-inverted);
+}
+
 .bt-sub {
 text-align:center;
 gap: 16px;
-}
-
-.telegram {
-
 }
 
 .subscribe {
@@ -630,7 +649,10 @@ align-items: flex-start;
 gap: 24px;
 }
 
+.subtitle-box {
+display: flex;
 
+}
 
 /*  Portfolio початок   */
 .site-nav-portfolio {
@@ -901,11 +923,6 @@ fill: var(--color-inverted);
 
 /* Інформація */
 
-.form {
-width: 360px;
-height: 336px;
-margin: 0 auto;
-}
 
 .your-contact {
 margin-bottom: 16px;
@@ -923,6 +940,7 @@ padding: 11px 0 11px 38px;
 margin-left: 0;
 border-radius: 4px;
 border: 1px solid #2e2f42;
+margin-top: 4px;
 }
 
 .content:focus {
@@ -976,7 +994,14 @@ height: 120px;
 resize: none;
 padding: 8px 0 0 16px;
 margin-bottom: 16px;
+margin-top: 4px;
 border: 1px solid #2E2F42;
+border-radius: 4px;
+}
+
+.form-input:focus {
+outline: none;
+border: 1px solid var(--color-button);
 border-radius: 4px;
 }
 
@@ -985,11 +1010,32 @@ border-radius: 4px;
 display: flex;
 gap: 8px;
 margin-bottom: 24px;
+font: inherit;
+font-size: 12px;
+color: #757575;
 }
 
-.visually-hidden {
 
+.type-polic::before{
+display: block;
+content: '';
+border: 1px solid var(--color-primary);
+width: 16px;
+height: 16px;
+cursor: pointer;
+border-radius: 2px;
+margin-right: 8px;
 }
+
+.visually-hidden-pol:checked + .type-polic::before {
+background-color: var(--color-button);
+background-image: url(../images/vector.svg);
+border: 1.25px solid #404bbf;
+background-repeat: no-repeat;
+background-size: 10px 8px;
+background-position: center;
+}
+
 
 .type-polic{
 width: 100%;
@@ -998,7 +1044,13 @@ color: #8E8F99;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.6;
+display: flex;
+align-items: center;
+}
 
+.priv-pol {
+color: var(--color-button);
+line-height: 1.16;
 }
 
 .input-form{
@@ -1007,14 +1059,14 @@ margin-bottom: 8px;
 }
 
 .icon-form {
-width: 13px;
-height: 13px;
+width: 18px;
+
 position: absolute;
 fill: #2E2F42;
 display: block;
 top: 50%;
 left: 19px;
-transform: translate(0, -50%);
+transform: translate(0, -40%);
 }
 
 

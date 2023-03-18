@@ -372,25 +372,27 @@ rel="stylesheet">
    
    <!-- Subscribe   -->
 
-   <div class="subscribe">
-      <div class="buton-subscr">
+   
+   <div class="buton-subscr">
    <h3 class="subtitle-footer">Subscribe</h3>
-   <form class="subtitle-box">
-     <input class="content-email" type="email" name="user-email" id="user-email" placeholder="E-mail" required />
-    
+   <form class="subtitle-box" name="subscribe">
+      <div class="">
+      <label for="email" class="email-sub">Email</label>
+     <input class="content-email" type="email" name="user-email" id="user-email" required />
+   </div>
+
+   <div class="button-subs-box">
+      <div class="bt-sub">
+         <button type="submit" class="button-subs">Subscribe
+            <svg class="telegram" width="24" height="24">
+               <use href="./images/icons.svg#icon-icon"></use>
+            </svg>
+         </button>
+      </div>
+   </div>
+   
    </form>
    </div>
-    
-     <div class="button-subs-box">
-      <div class="bt-sub">
-      <button type="submit" class="button-subs">Subscribe
-         <svg class="telegram" width="24" height="24">
-        <use href="./images/icons.svg#icon-icon"></use>
-         </svg>
-      </button>
-      </div>
-      </div>
-     </div>
     
 
 
@@ -447,10 +449,13 @@ rel="stylesheet">
       <label class="form-label" for="user-coment">Comment</label>
       <textarea class="form-input" name="user-coment" id="user-coment" placeholder="Text input"></textarea>
    
+      <!--  privat  -->
+
       <div class="privacy-policy">
-      <input class="visually-hidden" type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy" required />
+      <input class="visually-hidden-pol visually-hidden" type="checkbox" name="privacy-policy" value="privacy-policy" id="privacy-policy" required />
+   
       <label for="privacy-policy" class="type-polic">
-         I accept the terms and conditions of the <a href="">Privacy Policy</a>
+         I accept the terms and conditions of the <a class="priv-pol" href="">Privacy Policy</a>
       </label>
       </div>
 
