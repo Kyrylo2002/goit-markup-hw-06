@@ -491,8 +491,7 @@ padding-bottom: 120px;
 
 .container.footer {
 display: flex;
-align-items: flex-start;
-gap: 120px;
+
 }
 
 
@@ -535,6 +534,9 @@ margin-top: 0px;
 margin-bottom: 16px;
 }
 
+.footer-media {
+margin-left: 120px;
+}
 
 .box-media {
 margin-top: 0;
@@ -575,6 +577,12 @@ background-color: var(--color-social);
 /* Subscribe */
 
 
+.subtitle-box {
+display: flex;
+flex-direction: column;
+margin-left: 80px;
+}
+
 .subtitle-footer {
 font-family: 'Roboto';
 font-style: normal;
@@ -585,15 +593,20 @@ color: #FFFFFF;
 margin-bottom: 16px;
 }
 
+.contein-subsc {
+display: flex;
+}
+
 .content-email {
 width: 264px;
 height: 40px;
-padding: 8px 0 8px 55px;
+padding: 8px 0 8px 18px;
 margin-left: 0;
 border-radius: 4px;
 border: 1px solid #FFFFFF;
 background-color: transparent;
 color: var(--color-inverted);
+margin-right: 20px;
 }
 
 .content-email:focus {
@@ -601,15 +614,6 @@ outline: none;
 border: 1px solid var(--color-button);
 }
 
-.soc-box {
-display: flex;
-align-items: flex-start;
-gap: 80px;
-}
-
-.button-subs-box {
-margin-top: 36px;
-}
 
 .button-subs {
 width: 165px;
@@ -624,6 +628,7 @@ cursor: pointer;
 border: none;
 font-family: inherit;
 transition: background-color 250ms;
+
 }
 
 .email-sub{
@@ -638,20 +643,12 @@ height: 20px;
 fill: var(--color-inverted);
 }
 
-.bt-sub {
-text-align:center;
-gap: 16px;
-}
+
 
 .subscribe {
 display: flex;
 align-items: flex-start;
 gap: 24px;
-}
-
-.subtitle-box {
-display: flex;
-
 }
 
 /*  Portfolio початок   */
