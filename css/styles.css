@@ -616,19 +616,25 @@ border: 1px solid var(--color-button);
 
 
 .button-subs {
-width: 165px;
-height: 40px;
-font-size: 16px;
-line-height: 1.5;
+position: relative;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-font-weight: 500;
+letter-spacing: 0.04em;
 color: var(--color-inverted);
-background: var(--color-button);
+background-color: var(--color-button);
+border-color: var(--color-button);
 cursor: pointer;
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 24px;
+padding-right: 64px;
 border: none;
 font-family: inherit;
 transition: background-color 250ms;
+}
 
+.button-subs:hover {
+background-color: var(--color-hover);
 }
 
 .email-sub{
@@ -638,8 +644,11 @@ color: #E7E9FC;
 
 
 .telegram {
+position: absolute;
 width: 24px;
 height: 20px;
+padding-left: 10px;
+display: inline-block;
 fill: var(--color-inverted);
 }
 
