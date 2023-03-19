@@ -603,7 +603,7 @@ height: 40px;
 padding: 8px 0 8px 18px;
 margin-left: 0;
 border-radius: 4px;
-border: 1px solid #FFFFFF;
+border: 1px solid rgba(255, 255, 255, 0.3);
 background-color: transparent;
 color: var(--color-inverted);
 margin-right: 20px;
@@ -616,21 +616,25 @@ border: 1px solid var(--color-button);
 
 
 .button-subs {
-position: relative;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: #F4F4FD;
+font-family: 'Roboto';
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
 letter-spacing: 0.04em;
-color: var(--color-inverted);
-background-color: var(--color-button);
-border-color: var(--color-button);
-cursor: pointer;
-padding-top: 8px;
-padding-bottom: 8px;
-padding-left: 24px;
-padding-right: 64px;
+color: #fff;
+background-color: #4D5AE5;
+width: 165px;
+height: 40px;
+border-radius: 4px;
 border: none;
-font-family: inherit;
-transition: background-color 250ms;
+cursor: pointer;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-subs:hover {
@@ -644,15 +648,18 @@ color: #E7E9FC;
 
 
 .telegram {
-position: absolute;
-width: 24px;
-height: 20px;
+width: 34px;
+height: 24px;
 padding-left: 10px;
 display: inline-block;
 fill: var(--color-inverted);
 }
 
-
+.box-button-sub {
+width: 100%;
+ display: flex;
+ align-items: center;
+}
 
 .subscribe {
 display: flex;
@@ -886,8 +893,6 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-min-width: 408px;
-min-height: 584px;
 background: #fcfcfc;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -945,7 +950,7 @@ height: 40px;
 padding: 11px 0 11px 38px;
 margin-left: 0;
 border-radius: 4px;
-border: 1px solid #2e2f42;
+border: 1px solid rgba(33, 33, 33, 0.2);
 margin-top: 4px;
 }
 
@@ -987,11 +992,17 @@ background-color: var(--color-hover);
 }
 
 
-.form-label {
+.form-label-name {
 font-size: 12px;
 line-height: 1.16;
 display: block;
 color: #8E8F99;
+}
+
+.form-label-name{}
+
+.form-label-phone{
+
 }
 
 .form-input {
@@ -1001,7 +1012,7 @@ resize: none;
 padding: 8px 0 0 16px;
 margin-bottom: 16px;
 margin-top: 4px;
-border: 1px solid #2E2F42;
+border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
 
