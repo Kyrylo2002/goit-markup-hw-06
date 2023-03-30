@@ -929,15 +929,10 @@ color: var(--color-inverted);
 }
 
 .modal-close:hover .icon-close {
-{
-        fill: var(--color-inverted);
-    }
+   fill: var(--color-inverted);
 }
 
-
  /*Інформація */
-
-
 
 .box-contact {
 margin-bottom: 16px;
@@ -1116,5 +1111,3 @@ left: 19px;
 transform: translate(0, -50%);
 transition: fill-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close:hover
